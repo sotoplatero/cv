@@ -1,4 +1,5 @@
 export default {
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -31,6 +32,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxt/http',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

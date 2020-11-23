@@ -9,12 +9,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.0",
     "@tailwindcss/forms": "^0.2.1",
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
+    "faunadb": "^4.0.0",
     "nuxt": "^2.14.6",
-    "staticman": "eduardoboucas/staticman#2be29f7",
-    "url-pattern": "^1.0.3"
+    "url-pattern": "^1.0.3",
+    "vue-flatpickr-component": "^9.0.2"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
