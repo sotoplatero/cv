@@ -1,6 +1,8 @@
 <template>
   <div>
     <Header/>
+    <Hero/>
+
     <div class="min-h-screen">
       <div class="w-full md:w-6/12 mx-auto p-4">
 
