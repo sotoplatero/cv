@@ -10,7 +10,6 @@ exports.handler = async (event) => {
   })  
   /* parse the string body into a useable JS object */
   const cv = JSON.parse(event.body)
-  console.log('CV', cv)
 
   /* construct the fauna query */
   return db.query( q.Create(q.Collection('docs'), { data: cv } ) )
