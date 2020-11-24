@@ -7,7 +7,11 @@
       <div class="w-full md:w-6/12 mx-auto p-4">
 
           <div class="mt-5 md:mt-0 ">
-            <form action="#" method="POST" @submit.prevent="create">
+            <form 
+              action="#" 
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"              
+            >
               <div class="space-y-8">
 
                 <Box>
