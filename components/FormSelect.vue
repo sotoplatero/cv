@@ -9,6 +9,7 @@
 		</label>
 		<select 
 			:id="name" 
+			:name="name" 
 			class="block w-full border-gray-300 border-2 rounded"
 			v-bind:value="value"
 			v-on:input="$emit('input', $event.target.value)"			

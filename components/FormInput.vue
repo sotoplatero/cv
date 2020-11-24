@@ -12,6 +12,7 @@
 			<input 
 				:type="type || 'text'" 
 				:id="name" 
+				:name="name"
 				class="block w-full border-gray-300 rounded"
 				:placeholder="placeholder"
 				v-bind:value="value"
