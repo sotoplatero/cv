@@ -14,9 +14,9 @@
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "faunadb": "^4.0.0",
+    "html-pdf": "^2.2.0",
     "nuxt": "^2.14.6",
-    "url-pattern": "^1.0.3",
-    "vue-flatpickr-component": "^9.0.2"
+    "url-pattern": "^1.0.3"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

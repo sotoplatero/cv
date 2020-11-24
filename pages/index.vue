@@ -1,20 +1,22 @@
 <template>
   <div>
-    <Header/>
-    <Hero/>
 
     <div class="min-h-screen">
       <div class="w-full md:w-6/12 mx-auto p-4">
+        <Header/>
+        <Hero/>
 
           <div class="mt-5 md:mt-0 ">
             <form 
-              action="#" 
+              name="cv"
+              method="POST"
               data-netlify="true"
-              data-netlify-honeypot="bot-field"              
             >
+
               <div class="space-y-8">
 
                 <Box>
+                    <Title label="Personal" />
                     <FormInput 
                       label="Nombre Completo" 
                       name="fullname"
@@ -36,9 +38,7 @@
                 </Box>
 
                 <Box>
-                  <div class="flex">
-                    <Title label="Educación / Formación" />
-                  </div>                  
+                  <Title label="Educación / Formación" />
                   <div v-if="cv.educations.length" class="space-y-10">
                       <Education 
                         v-for="(item, index) in cv.educations" :key="item.id"
@@ -53,9 +53,7 @@
                 </Box>
 
                 <Box>
-                  <div class="flex">
-                    <Title label="Experiencia Laboral" />
-                  </div>
+                  <Title label="Experiencia Laboral" />
                   <div v-if="cv.works.length" class="space-y-10">
                       <Work 
                         v-for="(item, index) in cv.works" :key="item.id"
@@ -70,9 +68,7 @@
                 </Box>
 
                 <Box>
-                  <div class="flex">
-                    <Title label="Habilidades" />
-                  </div>
+                  <Title label="Habilidades" />
                   <div v-if="cv.skills.length" class="space-y-3">
                       <Skill 
                         v-for="(item, index) in cv.skills" :key="item.id"
@@ -87,9 +83,7 @@
                 </Box>
 
                 <Box>
-                  <div class="flex">
-                    <Title label="Intereses" />
-                  </div>
+                  <Title label="Intereses" />
                   <div v-if="cv.interests.length" class="space-y-3">
                       <Interest 
                         v-for="(item, index) in cv.interests" :key="item.id"
