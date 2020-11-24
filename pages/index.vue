@@ -12,7 +12,7 @@
               method="POST"
               data-netlify="true"
             >
-
+              <input type="hidden" name="form-name" value="cv" />
               <div class="space-y-8">
 
                 <Box>
