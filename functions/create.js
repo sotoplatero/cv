@@ -1,32 +1,94 @@
-/* Import faunaDB sdk */
-const faunadb = require('faunadb')
+const Hubdb = require('hubdb');
+const Octokat = require('octokat');
+var hat = require('hat');
+var btoa = require('btoa');
+var GitHub = require('github-api');
 
 /* export our lambda function as named "handler" export */
-exports.handler = async (event) => {
-  /* configure faunaDB db with our secret */
-  const q = faunadb.query
-  const db = new faunadb.Client({
-    secret: process.env.FAUNA_SERVER_KEY
-  })  
-  /* parse the string body into a useable JS object */
+exports.handler = async function(event, context) {
+
   const cv = JSON.parse(event.body)
 
-  /* construct the fauna query */
-  return db.query( q.Create(q.Collection('docs'), { data: cv } ) )
-    .then((response) => {
-      console.log('success', response)
-      /* Success! return the response with statusCode 200 */
-      return {
-        statusCode: 200,
-        body: JSON.stringify(response)
-      }
-    })
-    .catch((error) => {
-      console.log('error', error)
-      /* Error! return the error with statusCode 400 */
-      return {
-        statusCode: 400,
-        body: JSON.stringify(error)
-      }
-    })
+  var personalAccessToken = process.env.GITHUB_TOKEN;
+
+  console.log(cv);
+
+  var github = new Octokat({
+    token: personalAccessToken,
+  });
+  var repo = github.repos('sotoplatero', 'db');
+
+  var config = {
+    message: 'Updating file',
+    content: btoa('New file contents'),
+    sha: 'd59db5df707cf82a510e7d221d34d70a63e55d46', // the blob SHA
+    // branch: 'gh-pages'
+  }
+  
+  repo.contents('README.md').add(config)
+  .then((info) => {
+    console.log('File Updated. new sha is ', info.commit.sha)
+  })  
+
+  // var id = hat() + '.json';
+  
+  // return repo.contents(id).add({
+  //     content: btoa( event.body ),
+  //     branch: 'main',
+  //     message: '+'
+  // }).then( (info) => {
+  //   console.log(info)
+  //   return {
+  //     statusCode: 200,
+  //     body: JSON.stringify(id)
+  //   }  
+
+  // })
+  // .then(null, (err) => console.error(err))
+
+
+
+  // var db = Hubdb({
+  //   token: process.env.GITHUB_TOKEN,
+  //   username: 'sotoplatero',
+  //   repo: 'db',
+  //   branch: 'main'
+  // });
+
+  // console.log(Hubdb)
+
+  // return db.add(cv, function(err, res, id) {
+
+  //   if (err) {
+  //     console.log('error', err)
+
+  //     return {
+  //       statusCode: 400,
+  //       body: JSON.stringify(err)
+  //     }      
+  //   }
+
+  //   console.log('success', id)
+  //   /* Success! return the res with statusCode 200 */
+  //   return {
+  //     statusCode: 200,
+  //     body: JSON.stringify(cv)
+  //   }    
+
+  // });
+
+  // var options = {
+  //   owner: 'sotoplatero', // <-- Your Github username
+  //   repo: 'db', // <-- Your repository to be used a db
+  //   path: 'cvs.json' // <- File with extension .json
+  // };
+
+  // // Require GithubDB
+  // // Initialize it with the options from above.
+  // var githubDB = new GithubDB(options);
+  // githubDB.auth(personalAccessToken);
+  // githubDB.connectToRepo();
+  // githubDB.save(cv);
+
+
 }

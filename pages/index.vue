@@ -99,7 +99,7 @@
                   </button>
                 </Box>
 
-                <BtnCreate />      
+                <BtnCreate :cv="cv"/>      
 
               </div>
 
@@ -144,7 +144,7 @@ export default {
     }
   },
   methods: {
-
+    
   }
 };
 </script>
