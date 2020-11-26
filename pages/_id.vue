@@ -7,12 +7,6 @@
 </template>
 
 <script>
-const faunadb = require('faunadb')
-const q = faunadb.query
-const db = new faunadb.Client({
-  secret: process.env.FAUNA_ADMIN_KEY
-})  
-
 export default {
     data() {
       return {
