@@ -3,6 +3,7 @@ const Octokat = require('octokat');
 var hat = require('hat');
 var btoa = require('btoa');
 var GitHub = require('github-api');
+const { Octokit } = require("@octokit/rest");
 
 /* export our lambda function as named "handler" export */
 exports.handler = async function(event, context) {
@@ -13,23 +14,31 @@ exports.handler = async function(event, context) {
 
   console.log(cv);
 
-  var github = new Octokat({
-    token: personalAccessToken,
+  const octokit = new Octokit({
+    auth: personalAccessToken,
   });
-  var repo = github.repos('sotoplatero', 'db');
 
-  var config = {
-    message: 'Updating file',
-    content: btoa('New file contents'),
-    sha: 'd59db5df707cf82a510e7d221d34d70a63e55d46', // the blob SHA
-    // branch: 'gh-pages'
+  try {
+    var id = hat();
+    var fileName = `${id}.json`;
+    var fileContent = btoa( event.body );
+
+    const {data} = await octokit.repos.createOrUpdateFileContents({
+        owner: 'sotoplatero',
+        repo: 'db',
+        path: fileName,
+        message: '+',
+        content: fileContent,
+      })
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(data)
+    }     
+
+  } catch (err) {
+    console.error(err)
   }
-  
-  repo.contents('README.md').add(config)
-  .then((info) => {
-    console.log('File Updated. new sha is ', info.commit.sha)
-  })  
-
   // var id = hat() + '.json';
   
   // return repo.contents(id).add({

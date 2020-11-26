@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxt/http": "^0.6.0",
+    "@octokit/rest": "^18.0.9",
     "@tailwindcss/forms": "^0.2.1",
     "btoa": "^1.2.1",
     "core-js": "^3.6.5",
@@ -20,7 +21,9 @@
     "hat": "^0.0.3",
     "html-pdf": "^2.2.0",
     "hubdb": "^1.1.2",
+    "hubfs.js": "^1.0.0",
     "nuxt": "^2.14.6",
+    "octokat": "^0.10.0",
     "url-pattern": "^1.0.3"
   },
   "devDependencies": {
