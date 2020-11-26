@@ -21,7 +21,7 @@ exports.handler = async function(event, context) {
   var config = {
     message: 'Updating file',
     content: btoa('New file contents'),
-    sha: 'd59db5df707cf82a510e7d221d34d70a63e55d46', // the blob SHA
+    sha: 'acff8be', // the blob SHA
     // branch: 'gh-pages'
   }
   
