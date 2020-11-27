@@ -1,6 +1,6 @@
 <template>
   
-<header class="relative z-10 border-b border-gray-200 bg-white mb-10">
+<header class="sticky  top-0 z-10 border-b border-gray-200 bg-white mb-10">
   <div class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
     <div class="md:flex items-center">
       <a href="/" class="block">
@@ -31,6 +31,8 @@
           </svg>
           Descargar
         </button>
+
+        <BtnCreate :cv="cv"/>         
 
     </div>
       </div>

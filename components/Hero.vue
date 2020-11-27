@@ -1,17 +1,17 @@
 <template>
   <div class="my-10 mx-auto max-w-screen-xl px-4 sm:my-12 sm:px-6 md:my-16 lg:my-20 xl:my-32">
     <div class="text-center">
-      <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+      <h2 class="text-3xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-4xl sm:leading-none md:text-5xl">
         Crea, descarga y comparte 
         <br>
-        tu <span class="text-green-600">Curriculum Vitae</span>
+        tu <span class="text-red-700">Curriculum Vitae</span>
       </h2>
-      <p class="leading-7 mt-3 max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+<!--       <p class="leading-7 mt-3 max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
         Rápido, sencillo y gratis 
-      </p>
+      </p> -->
       <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
         <div class="rounded-md shadow">
-          <a href="#components" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+          <a href="#components" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
             Comenzar
           </a>
         </div>
@@ -29,11 +29,6 @@
 <script>
 
 export default {
-  props: [ 'item' ],
-  data() {
-    return {
-      interest: this.item,
-    }
-  },
+  props: [ 'cv' ],
 };
 </script>

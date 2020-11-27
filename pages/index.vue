@@ -2,8 +2,8 @@
   <div>
 
     <div class="min-h-screen">
+      <Header :cv="cv"/>
       <div class="w-full md:w-6/12 mx-auto p-4">
-        <Header/>
         <Hero/>
 
           <div class="mt-5 md:mt-0 ">
@@ -22,19 +22,19 @@
                       name="fullname"
                       v-model="cv.fullname" 
                     />            
-
-                    <FormInput 
-                      label="Correo Electronico" 
-                      name="email"
-                      v-model="cv.email" 
-                      type="email"
-                    />
-
-                    <FormInput 
-                      label="Teléfonos" 
-                      name="email"
-                      v-model="cv.phones" 
-                    />
+                    <div class="grid grid-cols-2 gap-2">
+                      <FormInput 
+                        label="Correo Electronico" 
+                        name="email"
+                        v-model="cv.email" 
+                        type="email"
+                      />
+                      <FormInput 
+                        label="Teléfonos" 
+                        name="email"
+                        v-model="cv.phones" 
+                      />
+                    </div>
                 </Box>
 
                 <Box>
@@ -98,8 +98,6 @@
                     Nuevo Interes
                   </button>
                 </Box>
-
-                <BtnCreate :cv="cv"/>      
 
               </div>
 
