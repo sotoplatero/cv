@@ -1,9 +1,10 @@
 <template>
   
 <header class="sticky  top-0 z-10 border-b border-gray-200 bg-white mb-10">
-  <div class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between px-2 py-2 sm:px-6  lg:px-8">
     <div class="md:flex items-center">
-      <a href="/" class="block">
+      <a href="/" class="block text-red-700 flex items-center">
+        <svg class="h-12 w-12 fill-current" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 1000 1000" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><g><path class="fil0" d="M538 528c-10,-9 -23,-15 -38,-15 -14,0 -27,5 -37,14l-1 1c-9,10 -15,23 -15,38 0,25 13,41 30,48 7,3 15,4 23,4 8,0 16,-1 23,-4 17,-7 30,-23 30,-48 0,-15 -6,-28 -15,-38l0 0z"/><path class="fil0" d="M415 735l0 83 170 0 0 -83c0,-19 -8,-37 -21,-50 -13,-13 -31,-21 -51,-21l-26 0c-20,0 -38,8 -51,21 -13,13 -21,31 -21,50z"/><path class="fil0" d="M373 818l0 -83c0,-31 13,-59 34,-80l0 0c7,-8 16,-14 26,-20 -17,-16 -29,-39 -29,-69 0,-26 11,-50 28,-68l2 -1c17,-16 40,-27 66,-27 26,0 50,11 68,28l0 0c17,18 28,42 28,68 0,30 -12,53 -29,69 10,6 19,12 26,20l0 0c21,21 34,49 34,80l0 83 93 0 -24 -174c-1,-6 1,-13 6,-17l168 -176 -240 -44c-6,-1 -12,-5 -15,-11l-115 -214 -115 214c-4,7 -10,11 -16,11l-239 44 168 176c5,5 7,11 6,17l-24 174 93 0z"/></g><text x="0" y="1015" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by fibo junior</text><text x="0" y="1020" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
         Curriculum
       </a>
     </div>

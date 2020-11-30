@@ -17,6 +17,7 @@
     "hat": "^0.0.3",
     "html-pdf": "^2.2.0",
     "nuxt": "^2.14.6",
+    "randomstring": "^1.1.5",
     "url-pattern": "^1.0.3",
     "uuid": "^8.3.1"
   },

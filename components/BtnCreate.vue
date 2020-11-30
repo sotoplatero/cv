@@ -12,21 +12,10 @@ export default {
 	props: [ 'cv' ],
 	// components: { Btn },
 	methods: {
-		create() {
-			console.log(this.cv)
-			this.$http.post( '/.netlify/functions/create', this.cv )
-			// fetch('/api/create', {
-			// 	method: 'POST',
-			//     headers: { 'Content-Type': 'application/json' },				
-			// 	body: JSON.stringify(this.cv)
-			// });
-		  // db.query( q.Create(q.Collection('docs'), { data: this.cv } ) )
-		  //   .then((response) => {
-		  //     console.log('success', response)
-		  //   })
-		  //   .catch((error) => {
-		  //     console.log('error', error)
-		  //   })
+		async create() {
+			let id;
+			let cv = await this.$http.post( '/api/create', this.cv ).then( res => res.json() )
+			this.$emit('on-save', cv)
 		},
 	}	
 };

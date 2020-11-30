@@ -2,7 +2,7 @@
   <div>
 
     <div class="min-h-screen">
-      <Header :cv="cv"/>
+      <Header :cv="cv" @onSave="saved"/>
       <div class="w-full md:w-6/12 mx-auto p-4">
         <Hero/>
 
@@ -62,7 +62,8 @@
                         @update="cv.works.splice(index,0,skill)"
                       />
                   </div> 
-                  <Btn @click.native.prevent="cv.works.push({id: Date.now()})">
+                  <Btn 
+                    @click.native.prevent="cv.works.push({id: Date.now()})">
                     Nuevo Trabajo
                   </Btn>                  
                 </Box>
@@ -116,6 +117,7 @@
 export default {
   data() {
     return {
+      id: '',
       cv: { 
         fullname: '',
         email: '' ,
@@ -136,7 +138,9 @@ export default {
     }
   },
   methods: {
-    
+    saved(cv) {
+      console.log(cv)
+    }
   }
 };
 </script>

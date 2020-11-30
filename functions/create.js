@@ -1,4 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
+var randomstring = require("randomstring");
 const { Octokit } = require("@octokit/rest");
 
 /* export our lambda function as named "handler" export */
@@ -7,11 +8,16 @@ exports.handler = async function(event, context) {
   let cv = JSON.parse(event.body)
   const date = Date();
 
+  var id = uuidv4();
   cv = {
     ...cv,
+    id: id,
     updated_at: date,
     created_at: date,
     ip: event.headers['client-ip'],
+    meta: {
+      key: randomstring.generate(),
+    }
   };
 
   const octokit = new Octokit({
@@ -20,7 +26,6 @@ exports.handler = async function(event, context) {
 
   try {
 
-    var id = uuidv4();
     var fileName = `${id}.json`;
     var fileContent = Buffer.from( JSON.stringify(cv), 'utf8' ).toString('base64') 
 
@@ -34,7 +39,7 @@ exports.handler = async function(event, context) {
 
     return {
       statusCode: 200,
-      body: JSON.stringify(data)
+      body: JSON.stringify(cv)
     }     
 
   } catch (err) {

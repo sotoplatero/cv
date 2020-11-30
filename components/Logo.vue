@@ -1,29 +1,4 @@
 <template>
-  <svg class="NuxtLogo" width="245" height="180" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M139 330l-1-2c-2-4-2-8-1-13H29L189 31l67 121 22-16-67-121c-1-2-9-14-22-14-6 0-15 2-22 15L5 303c-1 3-8 16-2 27 4 6 10 12 24 12h136c-14 0-21-6-24-12z"
-      fill="#00C58E"
-    />
-    <path
-      d="M447 304L317 70c-2-2-9-15-22-15-6 0-15 3-22 15l-17 28v54l39-67 129 230h-49a23 23 0 0 1-2 14l-1 1c-6 11-21 12-23 12h76c3 0 17-1 24-12 3-5 5-14-2-26z"
-      fill="#108775"
-    />
-    <path
-      d="M376 330v-1l1-2c1-4 2-8 1-12l-4-12-102-178-15-27h-1l-15 27-102 178-4 12a24 24 0 0 0 2 15c4 6 10 12 24 12h190c3 0 18-1 25-12zM256 152l93 163H163l93-163z"
-      fill="#2F495E"
-    />
-  </svg>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 8.4666667 10.583333625" version="1.1" x="0px" y="0px"><svg:g><svg:path style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.52916664;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" d="M 3.2122078,1.6951845e-4 A 0.26460979,0.26460979 0 0 0 2.9734638,0.26371852 V 1.1349835 a 0.26460979,0.26460979 0 0 0 0.265616,0.265618 h 1.98851 a 0.26460979,0.26460979 0 0 0 0.263549,-0.265618 V 0.26371852 A 0.26460979,0.26460979 0 0 0 5.2275898,1.6951845e-4 h -1.98851 a 0.26460979,0.26460979 0 0 0 -0.02687,0 z M 1.5539108,0.43580052 a 0.26460979,0.26460979 0 0 0 -0.264067,0.263549 V 8.2012185 a 0.26460979,0.26460979 0 0 0 0.264067,0.265618 h 5.357297 a 0.26460979,0.26460979 0 0 0 0.265615,-0.265618 V 0.69934952 a 0.26460979,0.26460979 0 0 0 -0.265615,-0.263549 h -0.890387 v 0.69711698 0.0021 c 7.94e-4,0.4315 -0.359489,0.793281 -0.791165,0.794781 a 0.52921956,0.52921956 0 0 1 -0.0021,0 h -1.988507 c -0.433117,7.94e-4 -0.795554,-0.36167 -0.794782,-0.794785 V 0.43583152 Z m 2.679422,1.89755998 c 0.522005,0 0.951363,0.428842 0.951365,0.950847 -2e-6,0.244263 -0.09663,0.466471 -0.250116,0.635619 0.33522,0.226957 0.556557,0.611111 0.556557,1.044382 v 0.736388 c -5.29e-4,0.14541 -0.118142,0.263036 -0.263549,0.263549 h -1.98851 c -0.145407,-5.29e-4 -0.263036,-0.118139 -0.263549,-0.263549 v -0.736388 c 0,-0.433271 0.22134,-0.817425 0.556553,-1.044382 -0.15345,-0.16914 -0.249594,-0.391385 -0.249597,-0.635619 5e-6,-0.522005 0.428845,-0.950847 0.950846,-0.950847 z m 0,0.529167 c -0.236019,0 -0.421677,0.185658 -0.421679,0.42168 2e-6,0.232465 0.180398,0.415679 0.411345,0.421161 0.0036,-2.9e-5 0.0068,-0.0011 0.01035,-0.0011 0.0036,0 0.0068,0.0011 0.01035,0.0011 0.230947,-0.0055 0.411859,-0.188696 0.411861,-0.421161 -2e-6,-0.236022 -0.186177,-0.42168 -0.422198,-0.42168 z m -0.01035,1.372007 c -0.403616,0.0055 -0.719852,0.324536 -0.719852,0.729674 v 0.472321 h 1.458825 v -0.472321 c 0,-0.405138 -0.314713,-0.724152 -0.718301,-0.729674 -0.0035,4e-5 -0.0068,0.0011 -0.01035,0.0011 -0.0036,0 -0.0068,-0.0011 -0.01035,-0.0011 z m -1.6769,2.118218 c 0.0091,-5.3e-4 0.01828,-5.3e-4 0.02739,0 h 3.320209 c 0.352867,0 0.352867,0.529166 0,0.529166 h -3.320209 c -0.352536,0.01852 -0.379926,-0.510646 -0.02739,-0.529166 z m 0.02739,0.941546 h 3.320209 c 0.352867,0 0.352867,0.529167 0,0.529167 h -3.320209 c -0.352867,0 -0.352867,-0.529167 0,-0.529167 z"/></svg:g><text x="0" y="23.4666669" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Larea</text><text x="0" y="28.4666669" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+	
 </template>
-
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-  margin: auto;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-}
-</style>
